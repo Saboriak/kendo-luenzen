@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kendo Lünzen – Der Weg des Schwertes. Training mittwochs in der Sporthalle Lünzen, Schneverdingen.">
+<title>Kendo Lünzen – Der Weg des Schwertes</title>
+<style>
+:root{--bg:#171714;--panel:#211f1c;--red:#b92719;--red2:#d23b2c;--cream:#f4f0e8;--muted:#c2bbb1;--line:#3b3731;--sans:Arial,Helvetica,sans-serif;--display:Impact,"Arial Narrow",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);line-height:1.6}a{color:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+header{position:absolute;z-index:5;top:0;left:0;right:0;border-bottom:1px solid #ffffff22;background:linear-gradient(#111d,transparent)}
+.nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-weight:800;letter-spacing:.1em;font-size:14px}.brand img{width:66px;height:66px;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
+nav{display:flex;gap:26px}nav a{text-decoration:none;text-transform:uppercase;font-size:11px;letter-spacing:.13em;color:#eee8df}nav a:hover{color:#ff8b7e}
+.hero{min-height:740px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#141311 0%,#141311ed 42%,#14131155 72%),url('assets/kendo-training.jpeg') center/cover}
+.hero:after{content:"";position:absolute;right:-95px;top:180px;width:280px;height:280px;border:36px solid #b9271930;border-radius:50%}
+.hero-inner{position:relative;z-index:1;padding:150px 0 100px;max-width:670px}
+.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.23em;color:#e56a5e;font-weight:bold}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.045em;font-size:clamp(68px,10vw,128px);line-height:.87;margin:24px 0 18px}
+h1 span{display:block;color:var(--red2)}.sub{font-size:clamp(17px,2.1vw,22px);color:#e1dbd2;max-width:570px}
+.hero-time{font-family:var(--display);font-size:clamp(22px,3vw,34px);letter-spacing:.08em;color:var(--red2);margin-top:27px;text-transform:uppercase}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{min-height:48px;display:inline-flex;align-items:center;padding:0 22px;border:1px solid #eee8df99;text-decoration:none;text-transform:uppercase;font-size:11px;font-weight:bold;letter-spacing:.13em}.btn.red{background:var(--red);border-color:var(--red)}.btn:hover{background:#8f1d14;border-color:#8f1d14}
+section{padding:92px 0}.section-title{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,66px);text-transform:uppercase;letter-spacing:.045em;line-height:1;margin:12px 0 20px}
+.section-intro{max-width:610px;color:var(--muted);margin:0 0 38px}.light{background:var(--cream);color:#1d1b18}.light .kicker{color:var(--red)}.light .section-intro{color:#615b53}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:18px}.detail{padding:32px;border:1px solid #d3cbc0;min-height:235px;background:#fff8}.detail small{color:var(--red);letter-spacing:.18em;font-weight:bold}.detail h3{font-family:var(--display);font-size:34px;font-weight:400;text-transform:uppercase;margin:15px 0 8px}.detail p{margin:4px 0;color:#514c45}.time{font-size:clamp(27px,4vw,42px)!important;color:#1d1b18!important;font-weight:700}
+.maplink{display:inline-block;color:var(--red);font-weight:bold;font-size:11px;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;border-bottom:1px solid #c77b73;padding-bottom:4px;margin-top:13px}
+.news{background:#211f1c}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{border-top:3px solid var(--red);background:#2a2723;padding:25px;min-height:230px}.news-card .tag{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#ed7669}.news-card h3{font-family:var(--display);font-weight:400;font-size:29px;line-height:1.1;text-transform:uppercase;margin:16px 0 12px}.news-card p{font-size:14px;color:#c7c0b6;margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.about-photo{width:100%;height:390px;object-fit:cover;object-position:center;border-radius:2px}.about-copy p{color:var(--muted)}.motto{font-family:var(--display);font-size:clamp(27px,4vw,43px);text-transform:uppercase;line-height:1.15;color:#fff;margin-top:24px}.motto span{color:var(--red2)}
+.contact{background:var(--red);padding:70px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact .kicker{color:#f4c1bb}.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,70px);line-height:1.02;text-transform:uppercase;margin:12px 0}.contact p{color:#f5d9d4}.contact .btn{border-color:#fff}
+footer{padding:26px 0;color:#aaa196;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:720px){.nav{height:78px}.brand img{width:54px;height:54px}nav{gap:12px}nav a{font-size:9px}nav a:nth-child(3){display:none}.hero{min-height:670px;background-position:58% center}.hero-inner{padding-top:145px}.details,.news-grid,.about{grid-template-columns:1fr}.about-photo{height:270px}section{padding:70px 0}.contact-inner{display:block}.contact .btn{margin-top:14px}}
+</style></head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#start"><img src="assets/logo-kendo-luenzen.png" alt="Vereinslogo Kendo Lünzen"><span>KENDO LÜNZEN</span></a>
+<nav aria-label="Hauptnavigation"><a href="#training">Training</a><a href="#news">News</a><a href="#verein">Kendo</a><a href="#kontakt">Kontakt</a></nav>
+</div></header>
+<main>
+<section class="hero" id="start"><div class="wrap hero-inner">
+<div class="kicker">剣道 · Kendō · Der Weg des Schwertes</div>
+<h1>Kendo <span>Lünzen</span></h1>
+<p class="sub">Kampfkunst. Selbstvertrauen. Geist, Körper und Schwert vereinen.</p>
+<div class="hero-time">Mittwochs · 18.30 Uhr</div>
+<div class="actions"><a class="btn red" href="#training">Trainingsinfos</a><a class="btn" href="mailto:kl.appel@gmx.de?subject=Anfrage%20zum%20Probetraining">Probetraining anfragen</a></div>
+</div></section>
+<section class="light" id="training"><div class="wrap">
+<div class="kicker">Komm vorbei und lerne uns kennen</div><h2 class="section-title">Training & Dojo</h2>
+<p class="section-intro">Wir trainieren jeden Mittwoch in der Sporthalle Lünzen. Wenn du Kendo kennenlernen möchtest, melde dich gerne vor deinem ersten Besuch bei uns.</p>
+<div class="details">
+<article class="detail"><small>01 / TRAININGSZEIT</small><h3>Mittwochs</h3><p class="time">18.30 – 20.00 Uhr</p><p>Regelmäßiges gemeinsames Kendo-Training.</p></article>
+<article class="detail"><small>02 / TRAININGSORT</small><h3>Sporthalle Lünzen</h3><p><strong>Alte Landstraße 3</strong></p><p>29640 Schneverdingen</p><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Alte+Landstra%C3%9Fe+3%2C+29640+Schneverdingen">Anfahrt in Google Maps ↗</a></article>
+</div></div></section>
+<section id="verein"><div class="wrap about">
+<img class="about-photo" src="assets/kendo-portrait.jpeg" alt="Kendoka in traditioneller Rüstung mit Shinai">
+<div class="about-copy"><div class="kicker">剣道 · Kendō</div><h2 class="section-title">Der Weg des Schwertes</h2>
+<p>Kendo ist eine japanische Schwertkampfkunst. Trainiert wird mit dem Bambusschwert (Shinai) und einer schützenden Rüstung (Bogu). Technik, Konzentration und körperliche Bewegung gehören ebenso dazu wie Respekt und gegenseitige Rücksichtnahme.</p>
+<div class="motto">Kampfkunst<br>Selbstvertrauen<br><span>Geist, Körper und Schwert vereinen</span></div>
+</div></div></section>
+<section class="contact" id="kontakt"><div class="wrap contact-inner"><div><div class="kicker">Dein erster Schritt</div><h2>Interesse an Kendo?</h2><p>Fragen zum Training oder Interesse an einem Probetraining? Melde dich gerne.</p><strong>kl.appel@gmx.de</strong></div><a class="btn" href="mailto:kl.appel@gmx.de?subject=Anfrage%20zum%20Kendo-Training">E-Mail schreiben ↗</a></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Kendo Lünzen</span><span>Sporthalle Lünzen · Schneverdingen</span><span>Impressum & Datenschutz vor Veröffentlichung ergänzen</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
